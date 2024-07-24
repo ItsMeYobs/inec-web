@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/bg.png);
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.logo-text {
+    margin-left: 20px;
+    color: #fff;
+}
+.logo-text h1 {
+    font-size: 50px;
+    margin: 0;
+}
+.logo-text p {
+    font-size: 12px;
+    margin: 0;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.middle-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    margin-top: 80px;
+}
+.middle-text h1 {
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #f44336;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    background-color: rgba(255, 255, 255, 0); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 70px; /* Adjust this value for spacing */
+}
+.input-box {
+    position: relative;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+.input-box .icon {
+    position: absolute;
+    left: 15px;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+}
+
+.input-box input {
+    font-size: 25px;
+    width: 80%;
+    padding: 10px 20px 10px 50px; /* Adjust padding to make space for the icon */
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.634);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+.input-box .toggle-password {
+    position: absolute;
+    right: 7px;
+    top: 59%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.button-box {
+    display: flex;
+    justify-content: center; /* Center the button */
+    width: 100%;
+}
+
+button {
+    font-size: 25px;
+    width: 350px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    /*Red-orange*/color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+}
+button:hover {
+    background-color: #ff8b6e; /* Lighten color on hover */
+}
+
+.create-account {
+    margin-top: 40px;
+}
+
+.create-account a {
+    color: #ffffff; 
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+}
+.create-account a:hover {
+    color: #ff8b6e;
+}
+
+
+/* about us */
+.overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Ensure it’s behind the About Us box */
+}
+
+
+.about-us {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed to the viewport */
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350%; /* Adjust width as needed */
+    max-width: 1000px; /* Max width for larger screens */
+    background-color: #800000; /* Maroon color */
+    color: #fff; /* Text color */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure it's on top */
+    border-radius: 20px;
+}
+
+.about-us-content {
+    text-align: center;
+    font-size: 35px;
+}
+.about-us p {
+    padding: 30px 30px 30px 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.about-us button {
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #f44336; /* Dark button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.about-us button:hover {
+    background-color: #ff8b6e;; /* Darker button color on hover */
+}
+
+
+/* Contact Us */
+.contact-us {
+    display: none;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    max-width: 1200px;
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+.contact-us-content {
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact-us-content h2 {
+    margin-bottom: 30px;
+}
+.contact-us-content p {
+    font-size: 15px;
+    text-align: left;
+}
+
+.contact-us-row {
+    display: flex;
+    justify-content: center; /* Center the boxes horizontally */
+    flex-wrap: wrap; /* Ensure the boxes wrap to the next line if needed */
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+
+.contact-us-box {
+    width: calc(25% - 20px); /* Fixed width for each box */
+    min-width: 220px; /* Minimum width to ensure readability */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: #800000; /* Maroon color */
+    color: #fff; /* Text color */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+}
+.contact-us-box h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px; /* Space between lines */
+}
+
+.contact-info img.icon {
+    width: 24px; /* Adjust icon size */
+    height: 24px; /* Adjust icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+.contact-info p {
+    margin: 0; /* Remove default margin */
+}
+
+.contact-us button {
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #f44336; /* Dark button color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.contact-us button:hover {
+    background-color: #ff8b6e; /* Darker button color on hover */
+}
+
+
+

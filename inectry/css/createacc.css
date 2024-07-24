@@ -1,0 +1,160 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container to hold both sides */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left side with background image */
+.left-side {
+    flex: 1;
+    background-image: url('/images/bg.png');
+    background-position: center left;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Large logo on the left side */
+.logo {
+    width: 300px; /* Adjust the size as needed */
+}
+
+/* Text below the logo */
+.welcome-text {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Right side with white background */
+.right-side {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Create account form */
+.create-account-form {
+    max-width: 600px;
+    width: 100%;
+}
+
+.create-account-form h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: green;
+}
+
+/* Full Name Row with Label */
+.label-row {
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.label-row label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* Full Name Input Row */
+.full-name-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow the row to wrap on smaller screens */
+    gap: 10px; /* Space between input boxes */
+}
+
+/* Input Box Styling */
+.input-box {
+    flex: 1;
+    min-width: 0; /* To make flexbox work properly in older browsers */
+    margin-bottom: 15px; /* Add space below each input box */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Make the label position relative to this box */
+}
+
+/* Label for input boxes */
+.input-box label {
+    font-size: 11px;
+    text-align: center;
+    position: absolute; /* Position the label absolutely */
+    bottom: -12px; /* Adjust as needed to position the label below the input */
+    left: 0;
+    width: 100%;
+}
+
+/* Input and select styling */
+.input-box input,
+.input-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Address Section */
+.address-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow the row to wrap on smaller screens */
+    gap: 10px; /* Space between input boxes */
+}
+
+.address-row .input-box {
+    flex: 1;
+    min-width: 0; /* To make flexbox work properly in older browsers */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button Box */
+.button-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-box button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-box button:hover {
+    background-color: #49db62;
+}
+
+/* Zone container styling */
+#zone-container {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Make the label position relative to this container */
+}
+
+#zone-container select,
+#zone-container input {
+    margin-bottom: 5px; /* Space between input/select and label */
+}

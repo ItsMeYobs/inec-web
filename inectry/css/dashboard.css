@@ -1,0 +1,53 @@
+/* dashboard.css */
+
+/* General dashboard styles */
+.dashboard {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.dashboard nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.dashboard nav img {
+    width: 80px;
+}
+
+.dashboard nav .logo-text {
+    color: #fff;
+}
+
+.dashboard nav .nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard nav .nav-links ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.dashboard nav .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.dashboard-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content h2 {
+    margin-bottom: 20px;
+}
